@@ -1,0 +1,146 @@
+/* Container for the detail and modify form */
+.detail{
+    padding-top: 50px;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .detail-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Styling for Annonce Details */
+  .detail-container h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .detail-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .detail-container strong {
+    font-weight: bold;
+  }
+  
+  /* Modify Form Styling */
+  .detail-container form {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .detail-container form div {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* Label Styling */
+  .detail-container form label {
+    font-size: 1.2rem;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Input, Textarea, and Select Styling */
+  .detail-container form input,
+  .detail-container form textarea,
+  .detail-container form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* Focus Effect on Inputs */
+  .detail-container form input:focus,
+  .detail-container form textarea:focus,
+  .detail-container form select:focus {
+    outline: none;
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.4);
+  }
+  
+  /* Modify Button Styling */
+  .detail-container form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #7ef542, #f5f542);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .detail-container form button:hover {
+    background: linear-gradient(135deg, #f5f542, #7ef542);
+    transform: scale(1.05);
+  }
+  
+  .detail-container form button:active {
+    transform: scale(1);
+  }
+  
+  /* Error Message Styling */
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .detail-container {
+      padding: 15px;
+    }
+  
+    .detail-container form {
+      max-width: 100%;
+    }
+  
+    .detail-container form label {
+      font-size: 1.1rem;
+    }
+  
+    .detail-container form input,
+    .detail-container form textarea,
+    .detail-container form select {
+      font-size: 1rem;
+    }
+  
+    .detail-container form button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  
